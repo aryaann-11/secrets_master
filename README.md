@@ -1,11 +1,26 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## After cloning ...
 
 First, install all dependencies
 
 ```bash
 npm install
+```
+
+Set up a secret configs file. This project uses mongo db atlas. You need to have an atlas
+account to get working 
+
+```bash
+ secret_config.js
+------------------
+
+export const config = {
+  mongodb_uri:
+    "your atlas connection string",
+  jwt_signing_key: "random key to sign jwt tokens",
+};
+
 ```
 
 Run the development server:
